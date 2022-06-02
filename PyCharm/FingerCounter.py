@@ -41,3 +41,73 @@ while True:
         print(fingers)
         totalFingers = fingers.count(1)
         #print(totalFingers)
+        if fingers == [0, 0, 0, 0, 0]:
+            total = 0
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (70, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+        if fingers == [0, 1, 0, 0, 0]:
+            total = 1
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (70, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+        if fingers == [0, 1, 1, 0, 0]:
+            total = 2
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (70, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+        if fingers == [1, 1, 1, 0, 0]:
+            total = 3
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (70, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+        if fingers == [0, 1, 1, 1, 1]:
+            total = 4
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (70, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+        if fingers == [1, 1, 1, 1, 1]:
+            total = 5
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (70, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+        if fingers == [0, 1, 1, 1, 0]:
+            total = 6
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (70, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+        if fingers == [0, 1, 1, 0, 1]:
+            total = 7
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (70, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+        if fingers == [0, 1, 0, 1, 1]:
+            total = 8
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (68, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+        if fingers == [0, 0, 1, 1, 1]:
+            total = 9
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (70, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+        if fingers == [1, 0, 0, 0, 0]:
+            total = 10
+            cv2.rectangle(img, (20, 15), (200, 200), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, str(total), (8, 170), cv2.FONT_HERSHEY_PLAIN,
+            10, (255, 0, 0), 25)
+
+
+        #cv2.rectangle(img, (20, 225), (170, 425), (0, 255, 0), cv2.FILLED)
+        #cv2.putText(img, str(totalFingers), (45, 375), cv2.FONT_HERSHEY_PLAIN,
+                    #10, (255, 0, 0), 25)
