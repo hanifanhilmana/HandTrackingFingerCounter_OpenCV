@@ -12,7 +12,7 @@ cap.set(4, hCam)
 
 pTime = 0
 
-detector = htm.handDetector(detectionCon=0.75)
+detector = htm.handDetector(detectionCon=0.5)
 
 tipIds = [4, 8, 12, 16, 20]
 
