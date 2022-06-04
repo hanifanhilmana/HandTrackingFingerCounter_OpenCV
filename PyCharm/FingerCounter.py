@@ -20,6 +20,7 @@ while True:
     success, img = cap.read()
     img = detector.findHands(img)
     lmList = detector.findPosition(img, draw=False)
+    img = cv2.flip(img,1)
     # print(lmList)
 
     if len(lmList) != 0:
@@ -119,4 +120,5 @@ while True:
                 3, (255, 0, 0), 3)
 
     cv2.imshow("Image", img)
-    cv2.waitKey(1)
+    if cv2.waitKey(1) & 0xFF==ord("q"):
+        break
