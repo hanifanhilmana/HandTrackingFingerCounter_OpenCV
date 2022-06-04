@@ -1,7 +1,7 @@
-import cv2
-import time
-import os
-import PyCharmModuleHandTracking as htm
+import cv2 #import modul camera virtual
+import time #import fungsi untuk waktu
+import os #import tampilan pada operasi sistem
+import PyCharmModuleHandTracking as htm #memanggil header PyCharmModuleHandTracking
 
 wCam, hCam = 640, 480
 
