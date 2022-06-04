@@ -28,19 +28,19 @@ class handDetector():
         
     def findPosition(self, img, handNo=0, draw=True):
 
-        lmList = []
+        lmList = [] #variabel lmList yang berisi kosong
         if self.results.multi_hand_landmarks:
-            myHand = self.results.multi_hand_landmarks[handNo]
-            for id, lm in enumerate(myHand.landmark):
+            myHand = self.results.multi_hand_landmarks[handNo] #myhand berisi koordinat
+            for id, lm in enumerate(myHand.landmark): #enumerate untuk mengambil id
                 # print(id, lm)
                 h, w, c = img.shape
-                cx, cy = int(lm.x * w), int(lm.y * h)
+                cx, cy = int(lm.x * w), int(lm.y * h) #menentukan posisi cx dan cy
                 # print(id, cx, cy)
-                lmList.append([id, cx, cy])
+                lmList.append([id, cx, cy]) #mengisi matriks imList dengan id, cx, cy
             if draw:
                 cv2.circle(img, (cx, cy), 15, (255, 0, 255), cv2.FILLED)
 
-        return lmList
+        return lmList #mengembalikan fungsi lmList
         
 def main():
     pTime = 0
