@@ -3,7 +3,7 @@ import time #import fungsi untuk waktu
 import os #import tampilan pada operasi sistem
 import PyCharmModuleHandTracking as htm #memanggil header PyCharmModuleHandTracking
 
-wCam, hCam = 640, 480
+wCam, hCam = 640, 480 #
 
 cap = cv2.VideoCapture(0)
 cap.set(3, wCam)
@@ -12,9 +12,9 @@ cap.set(4, hCam)
 
 pTime = 0
 
-detector = htm.handDetector(detectionCon=0.5)
+detector = htm.handDetector(detectionCon=0.5) #fingsi untuk mendeteksi id koordinat jari
 
-tipIds = [4, 8, 12, 16, 20]
+tipIds = [4, 8, 12, 16, 20] #koordinat dari x,y pada jari
 
 while True:
     success, img = cap.read()
